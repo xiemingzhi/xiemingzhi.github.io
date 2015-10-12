@@ -1,3 +1,7 @@
+---
+title: This is my title
+---
+
 # Ming's technology blog
 
 ```java
