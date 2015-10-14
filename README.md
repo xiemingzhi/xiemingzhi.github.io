@@ -14,11 +14,11 @@ solution open new cmd
 This is an example of syntax highlighting.
 Github does not support rouge so have to change to Pygments.
 
-{% highlight java %}
+```java
 public class Hello {
 	public static void main(String args[]) {
 		System.out.println("Hello World");
 	}
 }
-{% endhighlight %}
+```
 
