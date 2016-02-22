@@ -1,0 +1,13 @@
+---
+layout: post
+title: Programming struts tags usage
+date: '2009-03-24T00:09:00.001-07:00'
+author: bloggerming
+tags:
+- struts
+modified_time: '2015-12-03T04:30:52.370-08:00'
+blogger_id: tag:blogger.com,1999:blog-3711184356900467447.post-6605516855342259061
+blogger_orig_url: http://technoming.blogspot.com/2009/03/struts-tags-usage.html
+---
+
+struts tags usage<br />using arraylist and maps<br />define in your action<br /><pre>List  urlName = new ArrayList();<br /><br />for (Iterator i = st.iterator();  i.hasNext();) {<br /><br />String str = (String)i.next();<br /><br />uniqueSet.add(str.substring(0, str.indexOf(".")));<br /><br />String  kstr = str.substring(0, str.indexOf("."));<br /><br />Map surlName = new  HashMap();<br /><br />surlName.put("url", sysUrlMap.get(kstr));<br /><br />surlName.put("name", sysNameMap.get(kstr));<br /><br />urlName.add(surlName);<br /><br />}<br /><br />session.setAttribute("uniqueSysSet", uniqueSet);<br /><br />session.setAttribute("urlNameList", urlName);<br /><br /></pre><br />in your jsp retrieve the  object and use logic iterate to loop over list containing maps<br /><pre>&lt;%<br /><br />List urlName = (List)  session.getAttribute("urlNameList");<br /><br />pageContext.setAttribute("listurlname", urlName);<br /><br />%&gt;<br /><br />&lt;logic:iterate id="urlnamelist"  name="listurlname"&gt;<br /><br />&lt;td&gt;&lt;a href='&lt;bean:write  name="urlnamelist" property="url" /&gt;' target="leftFrame"&gt;&lt;bean:write  name="urlnamelist" property="name" /&gt;&lt;/a&gt;&lt;/td&gt;<br /><br />&lt;/logic:iterate&gt;<br /></pre>

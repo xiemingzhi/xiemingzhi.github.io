@@ -1,0 +1,13 @@
+---
+layout: post
+title: LDAP getting the previous dn
+date: '2009-03-23T23:33:00.000-07:00'
+author: bloggerming
+tags:
+- ldap
+modified_time: '2015-12-04T13:41:17.362-08:00'
+blogger_id: tag:blogger.com,1999:blog-3711184356900467447.post-3277893656651445619
+blogger_orig_url: http://technoming.blogspot.com/2009/03/ldap-getting-previous-dn.html
+---
+
+<pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"><code style="color:#000000;word-wrap:normal;"> public static String getPreviousDN(String dn) {  <br />      String retString = null;  <br />      try {  <br />           DirContext DirCtx = DriverLocator.getInstance().getDirectory();  <br />           NameParser parser = DirCtx.getNameParser("");  <br />           Name resultdn = parser.parse(dn);  <br />           resultdn = resultdn.getPrefix(resultdn.size()-1);  <br />           retString = resultdn.toString();  <br />           DirCtx.close();  <br />      } catch (Exception e) {  <br />           //forget errors  <br />           //e.printStackTrace();  <br />           System.err.println("DAOHelper getPreviousDN unable to parse dn " + dn);  <br />      }  <br />      //debugging  <br />      //System.out.println("nameparsertest dn(size-2) = " + retString);  <br />      return retString;  <br /> }  <br /></code></pre>

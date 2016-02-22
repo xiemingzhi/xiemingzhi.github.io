@@ -1,0 +1,13 @@
+---
+layout: post
+title: Rules for Cleaning logs
+date: '2009-03-24T00:26:00.001-07:00'
+author: bloggerming
+tags:
+- programming
+modified_time: '2015-12-03T02:03:16.504-08:00'
+blogger_id: tag:blogger.com,1999:blog-3711184356900467447.post-8519638863339359996
+blogger_orig_url: http://technoming.blogspot.com/2009/03/cleaning-logs.html
+---
+
+Clearing logs or file purging should be done at the systems level and not at  the programming or applications level because cleaning logs or deleting files  could take a long time and affect the performance of the application.<br />Should set  a cron job to execute a shell script and in the script specify which criteria of  files you want to delete.

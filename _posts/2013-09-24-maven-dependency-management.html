@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Maven dependency management '
+date: '2013-09-24T02:50:00.001-07:00'
+author: bloggerming
+tags:
+- maven
+modified_time: '2014-06-09T16:43:30.004-07:00'
+blogger_id: tag:blogger.com,1999:blog-3711184356900467447.post-8626451013796429092
+blogger_orig_url: http://technoming.blogspot.com/2013/09/maven-dependency-management.html
+---
+
+Maven dependency management Scenario: jar file from repository not in the format you want. <br /><pre style="background-color: #eeeeee; border: 1px dashed rgb(153, 153, 153); color: black; font-family: Andale Mono, Lucida Console, Monaco, fixed, monospace; font-size: 12px; line-height: 14px; overflow: auto; padding: 5px; width: 100%;"><code>&lt;dependency&gt;<br />   &lt;groupid&gt;com.mycompany.feature&lt;/groupid&gt;<br />   &lt;artifactid&gt;entity&lt;/artifactid&gt;<br />   &lt;version&gt;${mycompany-feature-entity-version}&lt;/version&gt;<br />&lt;/dependency&gt;<br /><br /></code></pre>jar file from repository is entity-0.1.0-20130924.075312-18.jar What is needed is entity.jar because jar is referred in persistence.xml  Solution: Use maven dependency plugin to configure <br /><pre style="background-color: #eeeeee; border: 1px dashed rgb(153, 153, 153); color: black; font-family: Andale Mono, Lucida Console, Monaco, fixed, monospace; font-size: 12px; line-height: 14px; overflow: auto; padding: 5px; width: 100%;"><code>&lt;plugin&gt;<br />   &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;<br />   &lt;artifactId&gt;maven-dependency-plugin&lt;/artifactId&gt;<br />   &lt;version&gt;2.8&lt;/version&gt;<br />   &lt;executions&gt;<br />      &lt;execution&gt;<br />         &lt;id&gt;mycopy&lt;/id&gt;<br />         &lt;phase&gt;prepare-package&lt;/phase&gt;<br />         &lt;goals&gt;<br />            &lt;goal&gt;copy&lt;/goal&gt;<br />         &lt;/goals&gt;    <br />         &lt;configuration&gt;<br />            &lt;artifactItems&gt;<br />               &lt;artifactItem&gt;<br />                  &lt;groupId&gt;com.mycompany.feature&lt;/groupId&gt;<br />                  &lt;artifactId&gt;entity&lt;/artifactId&gt;<br />                  &lt;version&gt;${mycompany-feature-entity-version}&lt;/version&gt;<br />                  &lt;type&gt;jar&lt;/type&gt;<br />                  &lt;overWrite&gt;true&lt;/overWrite&gt;<br />                  &lt;outputDirectory&gt;${project.build.directory}/${project.artifactId}/WEB-INF/lib&lt;/outputDirectory&gt;<br />                  &lt;destFileName&gt;entity.jar&lt;/destFileName&gt;<br />               &lt;/artifactItem&gt;<br />            &lt;/artifactItems&gt;<br />         &lt;/configuration&gt;<br />      &lt;/execution&gt;<br />   &lt;/executions&gt;<br />&lt;/plugin&gt;<br /></code></pre>

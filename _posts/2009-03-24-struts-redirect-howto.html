@@ -1,0 +1,13 @@
+---
+layout: post
+title: Programming struts redirect howto
+date: '2009-03-24T00:11:00.001-07:00'
+author: bloggerming
+tags:
+- struts
+modified_time: '2015-12-03T02:11:01.868-08:00'
+blogger_id: tag:blogger.com,1999:blog-3711184356900467447.post-3129780462309269193
+blogger_orig_url: http://technoming.blogspot.com/2009/03/struts-redirect-howto.html
+---
+
+struts redirect howto different web contexts<br />webappA sendredirect to  webappB<br />String url = response.encodeRedirectURL("urlwithparameters");<br />System.out.println("url = " + url);<br />response.sendRedirect(url);<br />return null;<br /><br />webappB receive  request process it findforward to redirect jsp<br />&lt;action path="/url"  type="SysAction" name="GenericForm" scope="session"&gt;<br />&lt;forward name="success" path="/redirect.jsp" &gt;&lt;/forward&gt;<br />&lt;forward name="fail" path="/error.jsp"&gt;&lt;/forward&gt;<br />&lt;/action&gt;<br /><br />redirect.jsp forwards to global forward jsp<br />&lt;%@  taglib uri="/WEB-INF/struts-logic.tld" prefix="logic"  %&gt;<br />&lt;logic:redirect forward="/goto-global-forward"/&gt;<br /><br />global  forward struts-config.xml<br />&lt;global-forwards&gt;<br />&lt;forward  name="/goto-global-forward" path="/theactualpage.jsp" /&gt;<br />&lt;/global-forwards&gt;<br /><br />this forwards to the actual page you want to  goto with the parameters

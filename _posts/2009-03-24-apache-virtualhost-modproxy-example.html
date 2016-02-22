@@ -1,0 +1,13 @@
+---
+layout: post
+title: Apache virtualhost mod_proxy example
+date: '2009-03-24T00:12:00.001-07:00'
+author: bloggerming
+tags:
+- network
+modified_time: '2015-12-03T02:09:09.947-08:00'
+blogger_id: tag:blogger.com,1999:blog-3711184356900467447.post-8226098914740571777
+blogger_orig_url: http://technoming.blogspot.com/2009/03/apache-virtualhost-modproxy-example.html
+---
+
+How to setup a virtualhost in Apache<br />for example<br />same ip<br />apache 80 port -&gt; tomcat 8080 port (use reverse  proxy)<br />apache 19080 port -&gt; tomcat 9080 port(use virtual  host)<br /><br />apache conf modifications<br />Listen 80<br />Listen  19080<br /><br /><virtualhost a="" href="http://192.168.144.179:19080">192.168.144.179:19080</virtualhost><br />&gt;ServerName  <a href="http://my.intranet.net/">my.intranet.net</a><br />ProxyPreserveHost On<br />ProxyPass /S010  <a href="http://192.168.144.179:9080/">http://192.168.144.179:9080/</a><br />ProxyPassReverse /S010  <a href="http://192.168.144.179:9080/">http://192.168.144.179:9080/</a><br /><br /><br /><br />remember to  include the modules for mod_proxy
