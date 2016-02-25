@@ -15,6 +15,6 @@ Setup your avd (android virtual device), startup avd manager, select Devices, se
 In the list of AVDs select the one that you just created then Edit it:
 ![Blogger export screenshot]({{ site.url }}/assets/avd-setup.png)
 <br>
-This is a windows setup with an intel pc so make sure you have installed the [intel hardware accelerate execution manager] (https://software.intel.com/en-us/android/articles/intel-hardware-accelerated-execution-manager/)
+This is a windows setup with an intel pc so make sure you have installed the [intel hardware accelerate execution manager](https://software.intel.com/en-us/android/articles/intel-hardware-accelerated-execution-manager/)
 <br>
 
