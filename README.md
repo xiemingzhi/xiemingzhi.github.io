@@ -24,12 +24,12 @@ gem install jekyll
 
 Help file for running jekyll [jekyll quickstart](http://jekyllrb.com/docs/quickstart/)<br>
 ```ruby
-bundle exec jekyll build<br>
-bundle exec jekyll serve<br>
+bundle exec jekyll build
+bundle exec jekyll serve
 ```
 or just 
 ```ruby
-jekyll serve<br>
+jekyll serve
 ```
 If you meet the problem command not found python<br>
 solution open new cmd<br>
