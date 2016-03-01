@@ -18,17 +18,25 @@ uru 224
 
 Install jekyll:
 
+```ruby
 gem install jekyll
+```
 
 Help file for running jekyll [jekyll quickstart](http://jekyllrb.com/docs/quickstart/)<br>
+```ruby
 bundle exec jekyll build<br>
 bundle exec jekyll serve<br>
-or just jekyll serve<br>
+```
+or just 
+```ruby
+jekyll serve<br>
+```
 If you meet the problem command not found python<br>
 solution open new cmd<br>
 
 This is an example of syntax highlighting.<br>
-Github does not support rouge so have to change to Pygments.(http://github.com/xiemingzhi/xiemingzhi.github.io/)<br>
+Github.io blogging supports rouge (_config.xml).<br>
+Github repository supports Pygments (README.md).<br>
 
 ```java
 public class Hello {
