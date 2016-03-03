@@ -41,6 +41,7 @@ public class OfyHelper implements ServletContextListener {
 }
 {% endhighlight %}
 
+Add the listener to web.xml
 {% highlight xml %}
 <filter>
   <filter-name>ObjectifyFilter</filter-name>
