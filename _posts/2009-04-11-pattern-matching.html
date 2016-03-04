@@ -1,0 +1,12 @@
+---
+layout: post
+title: Java pattern matching
+author: bloggerming
+tags:
+- programming
+modified_time: '2015-12-03T02:06:29.868-08:00'
+blogger_id: tag:blogger.com,1999:blog-3711184356900467447.post-3897694199597625131
+blogger_orig_url: http://technoming.blogspot.com/2009/03/pattern-matching.html
+---
+
+case insensitive search for a string<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Properties properties =  System.getProperties();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; properties.list(System.out);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String  osname = (String)properties.get("<a href="http://os.name/">os.name</a>");<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  System.out.println("osname="+osname);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pattern pat =  Pattern.compile("Windows", Pattern.CASE_INSENSITIVE);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Matcher mat =  pat.matcher(osname);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Looking for windows in  windows xp.");<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (mat.find())<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  System.out.println("subsequence found");<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  System.out.println("No Match");

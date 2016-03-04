@@ -1,3 +1,10 @@
-*.lock
-_site/
-assets/Thumbs.db
+_site/*
+_theme_packages/*
+
+Thumbs.db
+.DS_Store
+
+!.gitkeep
+
+.rbenv-version
+.rvmrc

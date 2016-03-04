@@ -1,0 +1,12 @@
+---
+layout: post
+title: Apache httpd reverse proxy howto
+author: bloggerming
+tags:
+- apache
+modified_time: '2015-12-03T04:30:34.217-08:00'
+blogger_id: tag:blogger.com,1999:blog-3711184356900467447.post-517363219353020189
+blogger_orig_url: http://technoming.blogspot.com/2009/03/apache-httpd-reverse-proxy-howto.html
+---
+
+apache httpd reverse proxy settings howto<br />LoadModule proxy_module modules/mod_proxy.so<br />LoadModule proxy_ajp_module  modules/mod_proxy_ajp.so<br />LoadModule proxy_balancer_module  modules/mod_proxy_balancer.so<br />LoadModule proxy_connect_module  modules/mod_proxy_connect.so<br />LoadModule proxy_http_module  modules/mod_proxy_http.so<br />LoadModule proxy_ftp_module  modules/mod_proxy_ftp.so<br />ProxyPass /gui/ <a href="http://localhost:55600/">http://localhost:55600/</a><br />ProxyPassReverse  /gui/ <a href="http://localhost:55600/">http://localhost:55600/</a>
