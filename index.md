@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Ming's technology blog
 ---
 {% include JB/setup %}
