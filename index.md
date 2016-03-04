@@ -2,6 +2,7 @@
 layout: default
 title: Ming's technology blog
 ---
+{% include JB/setup %}
 
 <h1>Blog Posts</h1>
   <ul class="posts">
