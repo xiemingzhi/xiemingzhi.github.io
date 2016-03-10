@@ -3,8 +3,6 @@ layout: post
 title: Openshift project
 ---
 
-{{ page.title }}
-================
 
 In order to support my android project I needed a backend. Chose openshift because it is free, have login capabilities and can run jboss. First go through the [openshift registration process](https://openshift.redhat.com) to register for an account. It is free and you get 3 free gears, gears are like instances.
 

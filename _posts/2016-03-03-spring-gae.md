@@ -3,8 +3,6 @@ layout: post
 title: Using Spring Framework Inside Google App Engine
 ---
 
-{{ page.title }}
-================
 
 Trying to port [spring project](https://github.com/xiemingzhi/springwebapp) to run on google app engine came across some stumbling blocks. The following is a list of things that didn't worked and one that worked.
 

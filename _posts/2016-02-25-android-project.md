@@ -3,8 +3,6 @@ layout: post
 title: Android studio - Android project
 ---
 
-{{ page.title }}
-================
 
 Starting an android project to call some webservices.<br>
 Using android studio 2.0. Android studio will install the android sdk for you but if you have already an installation change it so that it points to your location.<br>

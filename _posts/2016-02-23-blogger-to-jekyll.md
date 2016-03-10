@@ -3,8 +3,6 @@ layout: post
 title: Blogger to Jekyll
 ---
 
-{{ page.title }}
-================
 
 I wanted to see if it was possible to import blogger posts into github blog.<br>
 Found this tool that makes it simple to do so:<br>

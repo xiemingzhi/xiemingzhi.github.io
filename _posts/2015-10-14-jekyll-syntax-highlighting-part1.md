@@ -3,8 +3,7 @@ layout: post
 title: Jekyll Syntax Highlighting Example Part 1
 ---
 
-{{ page.title }}
-================
+The page.title is included in the layout template.
 
 <p>
 This is an example of syntax highlighting.<br>

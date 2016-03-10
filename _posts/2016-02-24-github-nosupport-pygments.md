@@ -3,8 +3,6 @@ layout: post
 title: Github does not support pygments
 ---
 
-{{ page.title }}
-================
 
 If you are blogging using github and are using syntax highlighting then watch out for this.<br>
 Github does not support pygments anymore.<br>

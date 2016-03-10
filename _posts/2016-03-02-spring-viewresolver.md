@@ -3,8 +3,6 @@ layout: post
 title: Spring Framework ViewResolver
 ---
 
-{{ page.title }}
-================
 
 My [spring project](https://github.com/xiemingzhi/springwebapp) needed to have two access points http://localhost:8080/springwebapp/ and http://localhost:8080/springwebapp/contact/jsonlist.json one for web access one for RESTful access.
 
