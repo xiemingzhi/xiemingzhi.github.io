@@ -11,9 +11,12 @@ Trying out [Jekyll Bootstrap](https://github.com/plusjade/jekyll-bootstrap/) bec
 
 Came across some problems with this plugin, it could pick up the bootstrap-3 theme. i.e Some links to the bootstrap js and css files were wrong "/assets/themes//bootstrap/css/bootstrap.min.css"  instead of "/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css".
 
-To fix change _includes/JB/setup to 
+To fix change _includes/JB/setup  
 <pre>
-{% capture ASSET_PATH %}{{ BASE_PATH }}/assets/themes/{{ layout.theme.name }}{% endcapture %}
+from
+page.theme.name
+to
+layout.theme.name 
 </pre>
 
 Also change _config.xml and set ASSET_PATH to "ASSET_PATH : /assets/themes/bootstrap-3"
