@@ -63,20 +63,12 @@
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
           </ul>
-		<script>
-		  (function() {
-			var cx = '004644570893039793657:x2oujahzy1u';
-			var gcse = document.createElement('script');
-			gcse.type = 'text/javascript';
-			gcse.async = true;
-			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-				'//cse.google.com/cse.js?cx=' + cx;
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(gcse, s);
-		  })();
-		</script>
-		<gcse:search></gcse:search>
-
+		  <form action="http://www.google.com/cse" id="cse-search-box" target="_blank" class="navbar-form navbar-right" role="search">
+			<input name="cx" type="hidden" value="004644570893039793657:x2oujahzy1u" /> 
+			<input name="ie" type="hidden" value="UTF-8" />
+			<input name="q" size="30" />
+			<input name="sa" type="submit" value="Search" /> 
+		  </form>
         </div><!-- /.navbar-collapse -->
       </nav>
 
