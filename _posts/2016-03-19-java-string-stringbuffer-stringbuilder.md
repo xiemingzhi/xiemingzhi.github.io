@@ -3,7 +3,7 @@ layout: post
 title: "Java String StringBuffer StringBuilder"
 description: ""
 category: 
-tags: []
+tags: [java]
 ---
 {% include JB/setup %}
 
