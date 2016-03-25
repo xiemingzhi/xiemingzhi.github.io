@@ -3,7 +3,7 @@ layout: post
 title: "Java Observer pattern"
 description: ""
 category: 
-tags: []
+tags: [java]
 ---
 {% include JB/setup %}
 
