@@ -3,7 +3,7 @@ layout: post
 title: "Installing libav on Ubuntu 14.04 Trusty"
 description: ""
 category: 
-tags: []
+tags: [linux]
 ---
 {% include JB/setup %}
 
