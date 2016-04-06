@@ -9,4 +9,11 @@ blogger_id: tag:blogger.com,1999:blog-3711184356900467447.post-85571942184347336
 blogger_orig_url: http://technoming.blogspot.com/2009/03/apache-httpd-configuration.html
 ---
 
-Alias /pds /packaging/sun/pds<br /><directory packaging="" pds="" sun=""><br />Options Indexes<br />Order allow,deny<br />Allow from  all</directory><br />
+{% highlight xml %}
+Alias /pds /packaging/sun/pds<br />
+<directory packaging="" pds="" sun=""><br />
+Options Indexes<br />
+Order allow,deny<br />
+Allow from  all<br />
+</directory><br />
+{% endhighlight %}
