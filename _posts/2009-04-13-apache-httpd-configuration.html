@@ -17,3 +17,14 @@ Order allow,deny
 Allow from  all
 </directory>
 {% endhighlight %}
+
+Make changes in 000-default.conf or default-ssl.conf
+{% highlight xml %}
+Alias /downloads/ "/mnt/downloads/"
+<Directory "/mnt/downloads/">
+Options Indexes FollowSymLinks
+Order allow,deny
+Allow from all
+Require all granted
+</Directory>
+{% endhighlight %}
