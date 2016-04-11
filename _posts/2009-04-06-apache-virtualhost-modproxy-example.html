@@ -25,10 +25,9 @@ ProxyPreserveHost On<br />
 ProxyPass /S010  <a href="http://192.168.144.179:9080/">http://192.168.144.179:9080/</a><br />
 ProxyPassReverse /S010  <a href="http://192.168.144.179:9080/">http://192.168.144.179:9080/</a><br />
 <br />
-remember to  include the modules for mod_proxy  
+remember to  include the modules for mod_proxy<br />
 <br />
-
-We are going reverse-proxy i.e. send the request to other application servers. apache2 is going to be the reverse proxy server, tomcat and jenkins the other application servers.
+We are going reverse-proxy i.e. send the request to other application servers. apache2 is going to be the reverse proxy server, tomcat and jenkins the other application servers.<br />
 <br />
 To do this you need to enable the mod_proxy module in apache2. 
 {% highlight shell %}
