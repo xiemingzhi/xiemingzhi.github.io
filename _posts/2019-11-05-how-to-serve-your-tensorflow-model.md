@@ -108,3 +108,9 @@ OK (skipped=1)
 ### todo evaluate model 
 
 
+## troubleshooting 
+
+  File "C:\Users\ming\Anaconda3\envs\tensorflow1\lib\site-packages\object_detection\models\faster_rcnn_inception_resnet_v2_feature_extractor.py", line 28, in <module>
+    from nets import inception_resnet_v2
+ModuleNotFoundError: No module named 'nets'
+set PYTHONPATH=D:\ming\git\models;D:\ming\git\models\research;D:\ming\git\models\research\slim  
