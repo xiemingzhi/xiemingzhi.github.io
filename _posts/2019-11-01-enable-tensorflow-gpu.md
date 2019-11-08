@@ -55,3 +55,10 @@ test program available at:
 [tensorflow_test.py](https://github.com/xiemingzhi/tensorflowproject/blob/master/tensorflow_test.py)  
 
 ### todo enable tensorflow gpu in jupyter notebook
+
+older version tf 1.13  
+conda create -n tensorflowgpu113 pip python=3.5  
+conda activate tensorflowgpu113  
+pip install tensorflow-gpu==1.13.1
+
+
