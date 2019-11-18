@@ -65,7 +65,7 @@ backups:
         - /var/run/docker.sock:/var/run/docker.sock
         - files:/source/owncloud_files:ro
         - mysql:/source/owncloud_mysql:ro
-        - /mnt/hdd1/drivers/vc62b/owncloud:/backup
+        - /mnt/hdbackup/owncloud:/backup
         - backup_cache:/volumerize-cache
 ```
 
