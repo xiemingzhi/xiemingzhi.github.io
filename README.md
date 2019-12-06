@@ -93,6 +93,13 @@ Create new post
 rake post title="AngularJS project to call RESTful service" date="2016-03-13"
 ```
 
+Create new page 
+
+```cmd
+# Rakefile
+# Usage: rake page name="about.html"
+```
+
 Help file for running jekyll [jekyll quickstart](http://jekyllrb.com/docs/quickstart/)
 
 ```ruby
