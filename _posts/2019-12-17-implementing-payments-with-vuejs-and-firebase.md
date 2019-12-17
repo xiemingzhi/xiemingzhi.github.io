@@ -15,6 +15,8 @@ Most important concept using this api still requies a PSP([Payments Service Prov
 
 # Stripe 
 
+Firebase provides an example for integration with [stripe](https://firebase.google.com/docs/use-cases/payments).  
+It is also written using [vue](https://github.com/firebase/functions-samples/blob/master/stripe/public/index.html).  
 Sign up for an account use the test token.  
 Don't use the npm stripe that is for server usage.  
 Have to include js in html:
