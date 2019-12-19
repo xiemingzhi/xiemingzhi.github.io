@@ -76,3 +76,35 @@ For production deployment there is https requirement or else you will get this e
 ```
 You may test your Stripe.js integration over HTTP. However, live Stripe.js integrations must use HTTPS.
 ```
+
+Update on the form element.  
+If you want to use the stripe integration example from firebase don't put the credit card details capture inside the form.  
+The form element click event will cause the page to be submitted causing a refresh losing the captured data.  
+Instead use: 
+```
+    <div>
+      <h4>新增信用卡</h4>
+      <div>
+        <label> 卡號 <input v-model="newCreditCard.number" /> </label>
+      </div>
+      <div>
+        <label> 安全碼 <input v-model="newCreditCard.cvc" /> </label>
+      </div>
+      <div>
+        <label>
+          到期日
+          <input v-model="newCreditCard.exp_month" size="2" /> /
+          <input v-model="newCreditCard.exp_year" size="4" />
+        </label>
+      </div>
+      <div>
+        <label> 郵遞區號 <input v-model="newCreditCard.address_zip" /> </label>
+      </div>
+      <div>
+        <button @click="submitNewCreditCard">增加</button>
+        {{ newCreditCard.error }}
+      </div>
+    </div>
+```
+
+
