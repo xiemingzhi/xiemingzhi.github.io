@@ -104,3 +104,25 @@ metadata:
 ...  
 ```
 Look for `SUCCESSFUL` message.
+
+### Export cloud storage to local machine 
+
+Use [gsutil](https://cloud.google.com/storage/docs/quickstart-gsutil) to copy to local machine  
+gsutil is contained in cloud sdk 
+if you installed the offline version then set environment variable
+```
+CLOUDSDK_PYTHON=C:\Users\username\Anaconda3\python.exe
+```
+open anaconda 
+```
+gsutil config 
+```
+export with folder name
+```
+gcloud firestore export gs://api-project-123456789012.appspot.com/all-collections
+```
+copy to local
+```
+gsutil cp -r gs://api-project-123456789012.appspot.com/all-collections d:\tmp\firestore
+```
+
