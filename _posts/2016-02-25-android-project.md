@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Android studio - Android project
 ---
 

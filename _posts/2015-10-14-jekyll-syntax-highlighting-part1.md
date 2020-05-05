@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Jekyll Syntax Highlighting Example Part 1
 ---
 

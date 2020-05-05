@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "ML scikit learn and tensorflow study"
 description: ""
 category: 

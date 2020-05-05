@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Github does not support pygments
 ---
 

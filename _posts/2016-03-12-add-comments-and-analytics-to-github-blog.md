@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Add comments and analytics to github blog"
 description: ""
 category: 

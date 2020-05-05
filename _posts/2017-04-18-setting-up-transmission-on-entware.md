@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Setting up transmission on entware"
 description: "transmission web entware"
 category: 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Change github blog to jekyll bootstrap"
 description: ""
 category: 

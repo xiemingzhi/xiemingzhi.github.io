@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Basic Maven Commands Part 2"
 description: ""
 category: 

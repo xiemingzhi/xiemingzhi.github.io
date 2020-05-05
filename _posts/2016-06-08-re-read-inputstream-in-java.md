@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Re read inputstream in java"
 description: ""
 category: 

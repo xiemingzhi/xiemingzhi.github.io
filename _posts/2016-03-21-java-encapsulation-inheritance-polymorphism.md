@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Java Encapsulation Inheritance Polymorphism"
 description: ""
 category: 

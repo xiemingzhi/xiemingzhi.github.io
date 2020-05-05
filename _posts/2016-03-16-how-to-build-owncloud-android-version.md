@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "How to build owncloud android version"
 description: ""
 category: 

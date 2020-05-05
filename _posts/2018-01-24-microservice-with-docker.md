@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Microservice with Docker"
 description: ""
 category: 

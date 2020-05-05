@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Troubleshooting tensorflow model project"
 description: ""
 category: "AI"

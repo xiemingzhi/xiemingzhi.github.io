@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "How to generate certificate for apache2"
 description: ""
 category: 

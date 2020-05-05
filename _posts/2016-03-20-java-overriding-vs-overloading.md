@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Java Overriding vs Overloading"
 description: ""
 category: 

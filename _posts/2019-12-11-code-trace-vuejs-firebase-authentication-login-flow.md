@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Code trace vuejs firebase authentication login flow"
 description: ""
 category: 

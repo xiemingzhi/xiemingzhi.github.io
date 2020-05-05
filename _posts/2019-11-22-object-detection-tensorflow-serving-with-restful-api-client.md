@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Object detection Tensorflow serving with RESTful API client"
 description: ""
 category: "AI"

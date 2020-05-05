@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "AngularJS project to call RESTful service"
 description: ""
 category: 

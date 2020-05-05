@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Docker Introduction"
 description: "Docker Java Spring Boot Example"
 category: 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Fixing cacti"
 description: ""
 category: "OS"

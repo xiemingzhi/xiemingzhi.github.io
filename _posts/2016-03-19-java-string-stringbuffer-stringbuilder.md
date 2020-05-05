@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Java String StringBuffer StringBuilder"
 description: ""
 category: 

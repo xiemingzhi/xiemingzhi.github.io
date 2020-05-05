@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Using prometheus to monitor docker statistics"
 description: ""
 category: "DevOP"

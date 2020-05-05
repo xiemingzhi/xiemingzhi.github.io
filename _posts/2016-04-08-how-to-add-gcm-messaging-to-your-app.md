@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "How to add gcm messaging to your app"
 description: ""
 category: 

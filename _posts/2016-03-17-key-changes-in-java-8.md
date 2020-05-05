@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Key changes in Java 8"
 description: ""
 category: 

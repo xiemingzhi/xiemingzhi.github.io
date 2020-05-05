@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Setup gitlab ci unit and integration"
 description: ""
 category: "DevOP"

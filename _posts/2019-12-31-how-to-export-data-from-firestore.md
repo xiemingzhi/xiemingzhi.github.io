@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "How to export data from firestore"
 description: ""
 category: 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "How to install gradle and use gradle for jenkins"
 description: ""
 category: 

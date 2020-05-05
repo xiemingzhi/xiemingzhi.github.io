@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Setup multiple sites for your project using firebase"
 description: ""
 category: "DevOP"

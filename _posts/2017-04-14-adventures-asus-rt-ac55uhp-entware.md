@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Adventures Asus RT AC55UHP Entware"
 description: "How to install entware on your router"
 category: 

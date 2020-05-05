@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Set the base url for jsp"
 description: ""
 category: 

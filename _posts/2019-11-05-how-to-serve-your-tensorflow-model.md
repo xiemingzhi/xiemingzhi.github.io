@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "How to serve your tensorflow model"
 description: ""
 category: "AI"

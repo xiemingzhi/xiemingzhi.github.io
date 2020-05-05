@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Java Observer pattern"
 description: ""
 category: 

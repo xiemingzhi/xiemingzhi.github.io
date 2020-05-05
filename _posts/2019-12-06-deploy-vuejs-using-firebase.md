@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Deploy vuejs using firebase"
 description: ""
 category: "DevOP"

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "How to backup your docker data volume manually and automatically"
 description: ""
 category: "Virtualization"

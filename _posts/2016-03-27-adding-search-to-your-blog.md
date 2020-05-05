@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Adding search to your blog"
 description: ""
 category: 

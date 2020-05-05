@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Using Spring Framework Inside Google App Engine
 ---
 

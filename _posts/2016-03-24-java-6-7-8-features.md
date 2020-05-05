@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Java 6 7 8 features"
 description: ""
 category: 

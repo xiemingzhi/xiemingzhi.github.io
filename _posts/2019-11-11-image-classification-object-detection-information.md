@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Image classification Object detection information"
 description: ""
 category: "AI"

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Implementing payments with vuejs and firebase"
 description: "Payments google pay stripe vuejs firebase"
 category: 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Move custom owncloud installation to repository"
 description: ""
 category: 

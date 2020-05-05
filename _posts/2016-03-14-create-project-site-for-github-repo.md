@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Create project site for github repo"
 description: ""
 category: 

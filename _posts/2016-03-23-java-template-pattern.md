@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Java Template pattern"
 description: ""
 category: 

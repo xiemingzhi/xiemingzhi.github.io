@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "How to enable OS Login in vm instance"
 description: ""
 category: "DevOP"

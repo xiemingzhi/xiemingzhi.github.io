@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "How to setup xcode and macos"
 description: ""
 category: 
